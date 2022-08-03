@@ -24,8 +24,7 @@ const contactFormHandler = function (event) {
     message: contactMessageInput,
   };
 
-  try {
-  } catch (err) {}
+  console.log(contactDataObj);
 };
 
 // function to check if there is an error in creating the data

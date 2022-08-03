@@ -44,7 +44,7 @@
     <div>
       <form id="contact-form">
         <div class="mb-3">
-          <label for="fullName-input" class="form-label">Full Name</label>
+          <label for="fullName-input" class="form-label" required>Full Name</label>
           <input
             type="text"
             name="contact-name"
@@ -61,6 +61,7 @@
             class="form-control"
             id="email-input"
             placeholder="name@example.com"
+            pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
           />
         </div>
         <div class="mb-3">
@@ -71,11 +72,12 @@
             class="form-control"
             id="phone-input"
             placeholder="1234567890"
+            pattern="((00)?(\+)?\d{1,3})[-\s]+(\d{1,3})[-\s]+(\d{4,10})"
           />
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea name="contact-message" class="form-control" id="message" rows="3"></textarea>
+          <textarea name="contact-message" class="form-control" id="message" rows="3" pattern="^{0,250}$"></textarea>
         </div class="form-control">
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

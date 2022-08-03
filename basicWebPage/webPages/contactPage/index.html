@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>MMA Storeent</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <h3>MMA Gear</h3>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../storePage/index.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../checkOutPage/index.html">Checkout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>Contact Us</h1>
+  </header>
+  <body>
+    <div>
+      <form id="contact-form">
+        <div class="mb-3">
+          <label for="fullName-input" class="form-label">Full Name</label>
+          <input
+            type="text"
+            name="contact-name"
+            class="form-control"
+            id="fullName-input"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email-input" class="form-label">Email address</label>
+          <input
+            type="email"
+            name="contact-email"
+            class="form-control"
+            id="email-input"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone-input" class="form-label">Phone Number</label>
+          <input
+            type="text"
+            name="contact-phone"
+            class="form-control"
+            id="phone-input"
+            placeholder="1234567890"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="contact-message" class="form-control" id="message" rows="3"></textarea>
+        </div class="form-control">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <p id="error-message"></p>
+    </div>
+
+    <script src="./../../js/index.js"></script>
+  </body>
+</html>

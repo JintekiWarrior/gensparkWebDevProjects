@@ -6,9 +6,7 @@ import Store from "./components/Store/Store";
 function App() {
   return (
     <div>
-      <Home />
       <NavBar />
-      <Store />
     </div>
   );
 }

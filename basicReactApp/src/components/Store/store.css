@@ -1,0 +1,4 @@
+.store__products {
+  display: flex;
+  justify-content: space-around;
+}
